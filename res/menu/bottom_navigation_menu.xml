@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_themes"
+        android:enabled="true"
+        android:icon="@drawable/ic_themes_outline"
+        android:title="@string/customisation_fragment_themes"/>
+    <item
+        android:id="@+id/item_qs"
+        android:enabled="true"
+        android:icon="@drawable/ic_qs_outline"
+        android:title="@string/customisation_fragment_qs"/>
+    <item
+        android:id="@+id/item_statusbar"
+        android:enabled="true"
+        android:icon="@drawable/ic_statusbar_outline"
+        android:title="@string/customisation_fragment_statusbar"/>
+    <item
+        android:id="@+id/item_extras"
+        android:enabled="true"
+        android:icon="@drawable/ic_extras_outline"
+        android:title="@string/customisation_fragment_extras"/>
+</menu>

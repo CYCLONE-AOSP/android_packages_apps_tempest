@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="elevation">3dp</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigationView.TitleAppearance</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavigationView.TitleAppearance</item>
+        <item name="itemRippleColor">@color/navigation_bar_ripple_color_selector</item>
+        <item name="itemIconTint">?attr/colorAccent</item>
+        <item name="itemTextColor">?attr/colorAccent</item>
+        <item name="android:minHeight">@dimen/bottom_nav_height</item>
+    </style>
+
+    <style name="BottomNavigationView.ActiveIndicator" parent="">
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
+        <item name="android:layout_marginHorizontal">4dp</item>
+        <item name="shapeAppearance">@style/BottomNavigationView.ActiveIndicator.ShapeAppearance</item>
+        <item name="android:color">@color/navigation_bar_active_indicator_bg</item>
+    </style>
+    <style name="BottomNavigationView.ActiveIndicator.ShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="BottomNavigationView.TitleAppearance" parent="">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

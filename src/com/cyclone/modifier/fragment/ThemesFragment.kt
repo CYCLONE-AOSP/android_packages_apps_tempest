@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.projectfluid.customisation
+package org.projectfluid.customisation.fragment
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent
 
@@ -25,19 +25,19 @@ import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.SettingsPreferenceFragment
 
-class FluidCustomisation : SettingsPreferenceFragment(), Preference.OnPreferenceChangeListener {
+class ThemesFragment : SettingsPreferenceFragment(), Preference.OnPreferenceChangeListener {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.customisation_main, rootKey)
+        addPreferencesFromResource(R.xml.customisation_themes)
     }
 
     override fun onPreferenceChange(preference: Preference, newValue: Any?): Boolean {
         return true
     }
 
-    override fun getMetricsCategory(): Int = MetricsEvent.FLUID
+    override fun getMetricsCategory(): Int = MetricsEvent.CYCLONE
 
     companion object {
-        const val TAG = "FluidCustomisation"
+        const val TAG = "ThemesFragment"
     }
 }
